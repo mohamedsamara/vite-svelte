@@ -1,14 +1,19 @@
 <script lang="ts">
-  import Counter from './lib/Counter.svelte';
+  import { Router, Route } from 'svelte-routing';
+
+  import Layout from './components/Layout.svelte';
+  import Login from './pages/Login.svelte';
+  import Home from './pages/Home.svelte';
+
+  export let url = '';
 </script>
 
-<main>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-</main>
+<Router {url}>
+  <Layout>
+    <Route path="/login"><Login /></Route>
+    <Route path="/"><Home /></Route>
+  </Layout>
+</Router>
 
 <style>
 </style>
