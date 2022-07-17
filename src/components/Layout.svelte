@@ -3,6 +3,6 @@
 </script>
 
 <Navbar />
-<main>
+<main class="h-screen">
   <slot />
 </main>

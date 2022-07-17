@@ -1,3 +1,5 @@
 <script lang="ts"></script>
 
-<main>home</main>
+<div class="flex flex-col justify-center items-center h-screen">
+  <h1 class="text-2xl font-semibold text-center">Home</h1>
+</div>
