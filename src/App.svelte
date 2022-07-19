@@ -2,8 +2,8 @@
   import { Router, Route } from 'svelte-routing';
 
   import Layout from './components/Layout.svelte';
-  import Login from './pages/Login.svelte';
   import Home from './pages/Home.svelte';
+  import Login from './pages/Login.svelte';
 
   export let url = '';
 </script>
