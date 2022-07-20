@@ -2,11 +2,12 @@
 
 ## Description
 
-<dl>
-<dt>
-    This project is an example of using Vite with Svelte
-</dt>
-</dl>
+This project is an example template of using Vite with Svelte. The project purpose is to experiment/implement the following features:
+
+1. Build Reusable components with Svelte
+2. Implement Routing with [Svelte Routing](https://github.com/EmilTholin/svelte-routing) including Protected Routes
+3. Use third party Svelte Library - [Toast component](https://github.com/zerodevx/svelte-toast)
+4. Experiment Svelte syntax, statements, logic, stores, bindings, animation
 
 ## Quick start
 
