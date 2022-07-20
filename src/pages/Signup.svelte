@@ -18,7 +18,7 @@
     password: '',
   };
 
-  const handleLogin = async () => {
+  const handleSignup = async () => {
     try {
       await loginSchema.validate(form, { abortEarly: false });
       errors = {
@@ -26,7 +26,7 @@
         password: '',
       };
 
-      const response = await fetch(`${API_URI}/auth/login`, {
+      const response = await fetch(`${API_URI}/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -55,8 +55,8 @@
 </script>
 
 <div class="flex flex-col justify-center h-screen container mx-auto px-4 lg:max-w-xl">
-  <h1 class="text-3xl font-semibold text-center mb-6">Sign In</h1>
-  <form on:submit|preventDefault={handleLogin} class="flex flex-col">
+  <h1 class="text-3xl font-semibold text-center mb-6">Sign Up</h1>
+  <form on:submit|preventDefault={handleSignup} class="flex flex-col">
     <TextInput
       containerStyle="mb-2"
       placeholder="Email address"
@@ -72,6 +72,6 @@
       on:change={handleFormChange}
       error={errors.password}
     />
-    <Button style="mt-4" type="submit" variant="primary">Login</Button>
+    <Button style="mt-4" type="submit" variant="primary">Sign up</Button>
   </form>
 </div>
